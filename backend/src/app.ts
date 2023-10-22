@@ -1,11 +1,12 @@
 // Main application
 import express from "express";
-import { config } from "dotenv";
+import * as dotenv from "dotenv";
 import morgan from "morgan";
 import appRouter from "./routes/index.js";
 import cookieParser from "cookie-parser";
+import { ENV_PATH } from "./utils/constants.js";
 
-config();
+dotenv.config({path: ENV_PATH});
 const app = express();
 
 //middleware

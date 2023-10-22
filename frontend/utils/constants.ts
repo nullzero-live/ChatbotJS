@@ -1,7 +1,5 @@
 // CONSTANT VALUES
-import path from "path";
-
-export const COOKIE_NAME = "auth_token";
+import path from 'path';
 export const ENV_PATH = path.join('./', '..', '.env');
 
 

@@ -13,7 +13,6 @@ connectToDatabase()
     app.listen(PORT, () => console.log("Server is open on port "+PORT));
   })
   .catch( (err) => console.log(err));
-  
 
  
   /*
