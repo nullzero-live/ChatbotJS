@@ -3,7 +3,7 @@ import { connectToDatabase } from "./db/connection.js";
 import * as dotenv from "dotenv";
 dotenv.config();
 
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 64591;
 console.log("Connecting to Database and starting app...")
 
 //connection and listeners
@@ -13,8 +13,9 @@ connectToDatabase()
     app.listen(PORT, () => console.log("Server is open on port "+PORT));
   })
   .catch( (err) => console.log(err));
+  
 
-
+ 
   /*
   
   process.on('SIGINT', () => {

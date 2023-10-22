@@ -1,5 +1,8 @@
-.env
-dist/
-*.bak
 node_modules/
 archive/
+dist/
+.env
+*.env
+
+*.bak
+
