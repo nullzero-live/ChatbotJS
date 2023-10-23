@@ -16,18 +16,20 @@ graph TD
     B2 -->|Generate Insights| B3[Dashboard]
   end
   
+  subgraph Reporting_Module
+    A5 -->|View Basic Metrics| R1
+    B3 -->|View Advanced Insights| R2
+    B3 -->|View Strategic Insights| R3
+  end
+  
   subgraph Authorization_Levels
     C1[QA Team]
     C2[Dev Team]
     C3[Management]
-    C1 -->|Basic Reports| A5
-    C2 -->|Basic & Advanced Reports| A5
-    C3 -->|All Reports| B3
+    C1 -->|Basic Reports| R1
+    C2 -->|Basic & Advanced Reports| R1,R2
+    C3 -->|All Reports| R1,R2,R3
   end
-
-  A5 -->|View Basic Metrics| C1
-  B3 -->|View Advanced Insights| C2
-  B3 -->|View Strategic Insights| C3
   ```
   
   
