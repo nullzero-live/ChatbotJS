@@ -9,4 +9,5 @@ dist/
 ./backend/.DS_Store
 ./backend/dist/
 *.bak
+docs/
 

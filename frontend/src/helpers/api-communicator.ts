@@ -21,11 +21,13 @@ export const signupUser = async (
   return data;
 };
 
+//FIX LINE 27
 export const checkAuthStatus = async () => {
-  const res = await axios.get("/user/auth-status");
+  const res = await axios.get("/user"); //add /auth-status
   if (res.status !== 200) {
     throw new Error("Unable to authenticate");
   }
+  //const data = console.log("This is a placeholder for when Auth is implemented!")
   const data = await res.data;
   return data;
 };

@@ -1,5 +1,5 @@
 import Header from "./components/Header";
-import { useAuth } from "./context/AuthContext";
+//import { useAuth } from "./context/AuthContext";
 import { Routes, Route } from "react-router-dom";
 import Signup from "./pages/Signup";
 import Login from "./pages/Login";
@@ -9,7 +9,8 @@ import NotFound from "./pages/NotFound";
 
 
 function App() {
-  const auth = useAuth();
+  console.log("Auth disabled for debugging");
+  //const auth = useAuth();
   return (<main>
     <Header />
     <Routes>
